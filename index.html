@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="valentines.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    
+    <div id="passcodePopup" class="passcode-popup">
+        <div class="passcode-content">
+            <p>Please enter our anniversary in DD/MM format to continue:</p>
+            <input type="text" id="passcodeInput" maxlength="6" pattern="\d{6}" title="6-digit passcode" placeholder="Enter passcode" required>
+            <button onclick="checkPasscode()">Submit</button>
+        </div>
+    </div>
+    <div id="mainContent" style="display:none;"> <!-- Hide content initially -->
+    <h1>Toobie Boobie, Will you be my Valentine?</h1>
+
+    <div class="emoji-bear">
+        🐻‍❤️‍🩹
+    </div>
+
+    <div class="options">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <!-- Removed <img> tag, JavaScript will dynamically insert it here -->
+            <p id="popupText">Yay! ❤️, I knew you love me</p>
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+    
+    
+
+    <script src="script.js"></script> <!-- Link to your external JS file -->
+
+</body>
+</html>
